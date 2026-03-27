@@ -1,0 +1,29 @@
+# Master Configuration for Passive Income Agent Network
+
+global_settings:
+  workspace: "D:/Completed Projects"
+  log_level: "INFO"
+  sync_interval_seconds: 3600
+  simulated_mode: true
+
+agents:
+  content_arbitrage:
+    platforms: ["Pinterest", "TikTok"]
+    ai_engine: "jasper" # or "openai"
+    niche: "Wealth/Money Making"
+
+  digital_asset_factory:
+    platforms: ["Etsy", "KDP"]
+    design_tool: "Canva"
+    niche: "Education/Planners"
+
+  ecom_automation:
+    platforms: ["Shopify", "TikTok Ads"]
+    fulfillment: "AutoDS"
+    niche: "Trending Gadgets"
+
+api_keys:
+  # Do NOT store raw keys here. Use environment variables.
+  openai: "${OPENAI_API_KEY}"
+  canva: "${CANVA_API_KEY}"
+  pinterest: "${PINTEREST_API_KEY}"
